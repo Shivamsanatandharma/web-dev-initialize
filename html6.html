@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jee registration form</title>
+</head>
+
+<body>
+    <h1>Register Yourself </h1>
+    <div>
+        <p> please fill the registration form using capital letters</p>
+    </div>
+    <form action="backend.php">
+    <label for="name"> Name </label>
+
+    <div>
+        <input type="text" name="myname" id="name">
+    </div>
+    <label for="Father's Name"> Father's Name: </label>
+    <div>
+        <input type="text" name="Fname" id="Father's Name">
+    </div>
+    <div>
+        Gender: Male <input type="radio" name="Gname"> Female <input type="radio" name="Gname">
+        other <input type="radio" name="Gname">
+    </div>
+    <div>
+        Date of Birth: <input type="date" name="mydob">
+    </div>
+    <div>
+        Address:<br>
+        <textarea name="writeTxt" cols="40" rows="4"></textarea>
+    </div>
+    <div>
+        <label for="Restype">Residence type</label>
+        <select name="Residencetype" id="Restype">
+            <option value="Rur">Rural</option>
+            <option value="urb">Urban</option>
+        </select>
+    </div>
+    <!--label for="notes">no of notes</!--label-->
+    <div>
+         no of notes:<input type="number" name="mnonotes" id="notes">
+    </div>
+    <div>
+        Ensure that all the information provided by you is correct.<input type="checkbox" name="checkinfo">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"> 
+    </div>
+</form>
+
+</body>
+
+</html>
