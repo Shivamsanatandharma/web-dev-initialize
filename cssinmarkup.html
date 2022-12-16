@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro to css</title>
+    <!-- we will implement css in head which is called internal css -->
+    <!-- inline css overwrites the internal css because inline is implemented later  -->
+   <!-- the preferred means to use css is external css in which another css file is created and all the design component is written in that css file which is linked by the help of four css selectors which are: css element selector, css id selector, css class selector, css and css grouping selector though they can also be used in internal css-->
+   <!--  writing external css-->
+   <link rel="stylesheet" href="startcss.css">
+   <!-- css element selector -->
+   <style>
+        p{
+            color: purple;
+            background-color: yellow;
+        }
+    </style>
+    <!-- css id selector -->
+    <style>
+        #thirdpara{
+            color: aqua;
+            background-color: rgb(50, 50, 200);
+        }
+    </style>
+    <!-- css class selector -->
+    <style>
+        .redbackground{
+            color:white;
+            background-color: red;
+        }
+
+    </style>
+    <!-- a css id selector is uniquely applied and it can be applied only to that specific element who possess that id otherwisee it will mot be added whereas css class selector can be used by many elements which contains that class -->
+</head>
+<body>
+    <h3>learning the ways to add css</h3>
+    <!-- inline css is not preferred -->
+    <p style="color:red;">in this paragraph we want to add the cascading style sheets in two ways i.e inline and internal  css
+    </p>
+    <p ">in this paragraph we want to add the cascading style sheets in one ways i.e internal css</p>
+    <p id="thirdpara" >in this paragraph we want to add the cascading style sheets in three ways i.e inline ,internal and external css</p>
+   <p class="redbackground">
+    css in this paragraph we want to add the css using css classselector ; when the style is written under head of the same html file it is called internal and when another css file is created and that class is mentioned in that cs file then it will be known as external css</p>
+    <p id="thirdpara">helo we have also the same id i.e thirdpara</p>
+    <p id="lastpara">this is the last paragraph and external css is being implemented in this paragraph</p>
+</body>
+</html>
